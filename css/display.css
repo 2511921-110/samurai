@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.hoge a span img {
+  border: 2px solid #000;
+  display: block;
+  width: 800px;
+}
+
+.hoge a span {
+  display: block;
+  padding: 3px;
+  max-width: fit-content;
+}
+
+.hoge a {
+  display: block;
+  border: 2px solid #000;
+  max-width: fit-content;
+}
+
+.lineheight {
+  line-height: 2;
+}
+
+p {
+  margin: 0;
+}
+
+.sel div>p {
+  color: red;
+  /* margin-top: 2em; */
+  /* font-size: 10em; */
+}

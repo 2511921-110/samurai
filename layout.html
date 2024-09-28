@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <style>
+      section+section {
+        margin-top: 5rem;
+      }
+
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .item * {
+        margin: 0;
+      }
+
+      .item {
+        padding: 1rem;
+        background-color: bisque;
+        box-sizing: border-box;
+      }
+
+      .item:nth-child(3n+1) {
+        background-color: bisque;
+      }
+
+      .item:nth-child(3n+2) {
+        background-color: aquamarine;
+      }
+
+      .item:nth-child(3n+3) {
+        background-color: cornflowerblue;
+      }
+
+      .grid {
+        display: grid;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <article>
+        <h1>要素を横並びにレイアウトする</h1>
+        <section>
+          <h2>display: flexを使って、横に4つ並び</h2>
+          <style>
+            .flex01 .item {
+              width: calc(100% / 4);
+            }
+          </style>
+          <div class="flex flex01">
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>display: flexを使って、横に5つ並び</h2>
+          <style>
+            .flex02 .item {
+              width: calc(100% / 5);
+            }
+          </style>
+          <div class="flex flex02">
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">flexアイテムのタイトル</h2>
+              <p>flexアイテムのテキストが入ります。</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>display: gridを使って、横に4つ並び</h2>
+          <style>
+            .grid01 {
+              grid-template-columns: repeat(4, 1fr);
+            }
+          </style>
+          <div class="grid grid01">
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>display: gridを使って、横に5つ並び</h2>
+          <style>
+            .grid02 {
+              grid-template-columns: repeat(5, 1fr);
+            }
+          </style>
+          <div class="grid grid02">
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+            <div class="item">
+              <h2 class="title">gridアイテムのタイトル</h2>
+              <p>gridアイテムのテキストが入ります。</p>
+            </div>
+          </div>
+        </section>
+        <h2>特殊事情（float）</h2>
+        <section></section>
+        <h2>floatを使う場合</h2>
+        <style>
+          .floatwrap+.floatwrap {
+            margin-top: 3rem;
+          }
+
+          .floatwrap {
+            background-color: gray;
+          }
+
+          /* .floatwrap::after {
+            content: "";
+            display: block;
+            clear: both;
+          } */
+
+          .floatleft {
+            float: left;
+          }
+
+          .floatright {
+            float: right;
+          }
+        </style>
+        <div class="floatwrap">
+          <div class="floatnone">
+            <h3>タイトル</h3>
+            <h3>中身</h3>
+            <h3>最後の文章</h3>
+          </div>
+        </div>
+        <div class="floatwrap">
+          <div class="floatleft">
+            <h3>タイトル</h3>
+            <h3>中身</h3>
+            <h3>最後の文章</h3>
+          </div>
+        </div>
+        <div class="floatwrap">
+          <div class="floatright">
+            <h3>タイトル</h3>
+            <h3>中身</h3>
+            <h3>最後の文章</h3>
+          </div>
+        </div>
+        </section>
+      </article>
+    </main>
+  </body>
+
+</html>

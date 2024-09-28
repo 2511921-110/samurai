@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+:root {
+  --mainColor: #fefefe;
+  --subColor: #333;
+  --accColor: #aa3300;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+
+
+/* 
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+ */
+/* tabletデザイン */
+/* @media (min-width: 580px) {
+  html {
+    font-size: 68.7%;
+  }
+} */
+
+/* iPad横画面以上のPCデザイン */
+/* @media (min-width: 1024px) {
+  html {
+    font-size: 74%;
+  }
+} */
+
+/* 画面幅が640pxより小さい場合 */
+/* @media (max-width: 640px) {
+  html {
+    font-size: 100%;
+  }
+} */
+
+body {
+  font-size: 1.6rem;
+  /* font-size: 16px; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section+section {
+  margin-top: 10rem;
+}
+
+th,
+td {
+  border: 1px solid var(--subColor);
+  padding: 1rem;
+}
+
+.section {
+  /* background-color: var(--accColor); */
+  /* color: var(--mainColor); */
+  padding: 1rem;
+}
+
+
+.sectiontitle {
+  font-size: 1.6rem;
+}
+
+.absolute {
+  position: relative;
+  z-index: 1;
+  /* min-height: 100vh; */
+}
+
+.absolute_head {
+  position: absolute;
+  left: 0;
+  /* top: 0; */
+  /* bottom: 0; */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--accColor);
+  color: var(--mainColor);
+  /* width: 60vw; */
+  padding: 5rem;
+  z-index: 2;
+  margin: auto;
+}
+
+.absolute_img {
+  position: relative;
+  margin-left: auto;
+  /* width: 60vw; */
+  z-index: 1;
+}
+
+
+.ps_style {
+  position: relative;
+  z-index: 1;
+}
+
+.ps_style-head {
+  background-color: var(--accColor);
+  color: var(--mainColor);
+  padding: 3rem;
+}
+
+/* #text {
+  font-size: 1.8rem;
+} */
+
+/* p#text {
+  font-size: 30rem;
+}
+p.text {
+  font-size: 20rem;
+} */
+
+.title {
+  font-size: 4rem;
+}
+
+.title {
+  /* font-size: 2rem; */
+  color: red;
+}
+
+.text {
+  font-size: 10rem;
+}
+
+.fontsize-lg {
+  font-size: 24px;
+}
+
+.fontsize-m {
+  font-size: 16px;
+}
+
+.fontsize-sm {
+  font-size: 12px;
+}

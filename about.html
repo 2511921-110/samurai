@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="./css/style02.css">
+  </head>
+
+  <body>
+    <h1>Position練習ページ</h1>
+    <main>
+      <article>
+        <section>
+          <h2>フォントサイズのイメージ</h2>
+          <div class="box">
+            <h1 class="title">ピクセルとは絶対値</h1>
+            <h1>h1の本来の大きさ</h1>
+            <p>pタグの本来の大きさ</p>
+            <div class="px">
+              <h1 class="px">ピクセルを指定したh１</h1>
+              <div class="px">
+                <p>16px</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <h1 class="title">パーセントとは親依存</h1>
+            <h1>h1の本来の大きさ</h1>
+            <p>pタグの本来の大きさ</p>
+            <div class="pc">
+              <p>150%を適用</p>
+              <h1 class="pc">ピクセルを指定したh１</h1>
+              <div class="pc">
+                <p>さらに小要素に150%を適用</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <h1 class="title">emも親要素に依存</h1>
+            <h1>h1が持つ本来の大きさ</h1>
+            <p>pタグの本来の大きさ</p>
+            <div class="em">
+              <h1>親要素に1.5em指定したh1</h1>
+              <h1 class="em">さらにh1にfont-size1.5emを指定した</h1>
+              <p>親要素に1.5em指定したpタグ</p>
+              <div>
+                <p class="em">さらにpにfont-size1.5emを指定した</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="ps_title">ポジションのイメージ</h2>
+          <div class="ps_body">
+            <div class="ps_style ps_style01">
+              <div class="ps_style-head">
+                <h3 class="ps_style-title">ポジションのタイトル</h3>
+                <div class="ps_styletext">
+                  <p>ポジションのテキストポジションのテキストポジションのテキストポジションのテキスト</p>
+                </div>
+              </div>
+              <div class="ps_style-body">
+                <div class="ps_style-img">
+                  <img src="./assets/0.jpg" alt="女性" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+
+</html>

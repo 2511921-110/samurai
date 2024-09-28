@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridを使ったvisual制作</title>
+  </head>
+
+  <body>
+    <main>
+      <article>
+        <style>
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+
+          .vs {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-content: center;
+            align-items: center;
+          }
+
+          .vs_head {
+            grid-column: 2/3;
+            grid-row: 1 /2;
+            background-color: #fff;
+            padding: 1rem;
+            width: 400px;
+          }
+
+          .vs_img {
+            grid-column: 1/ 4;
+            grid-row: 1 /2;
+          }
+        </style>
+        <section class="vs">
+          <div class="vs_img">
+            <img src="./assets/0.jpg" alt="" loading="lazy">
+          </div>
+          <div class="vs_head">
+            <h1>タイトル</h1>
+            <p>説明文</p>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+
+</html>
